@@ -1,0 +1,4 @@
+# Files git should NOT save or upload.
+
+# Hidden files macOS creates in every folder (they store Finder view settings)
+.DS_Store

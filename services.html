@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Same set-up as the home page. See index.html for what each line does. -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Knife &amp; Scissors Sharpening Prices, Mississauga | Iron Edge</title>
+  <meta name="description" content="Knife sharpening from $8, scissors from $10, plus garden tools and repairs in Mississauga. Drop off for next-day pickup or book an on-site visit in the GTA.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- FAVICON: the little logo in the browser tab, bookmarks and phone home screens.
+       Made from the emblem part of images/logo.png. -->
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192.png">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+  <!-- Colours the phone browser's address bar charcoal, to match the header -->
+  <meta name="theme-color" content="#1c1c1e">
+
+  <!-- STRUCTURED DATA: business details written in a format Google reads
+       (called "JSON-LD"). It helps Google show your hours, phone and area in
+       local search and Maps. Visitors never see this.
+       The same block is on every page: if a detail changes, update all 5.
+       When the site has its own web address, add it as "url". -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Iron Edge",
+    "slogan": "Stay Sharp",
+    "description": "Knife and scissors sharpening in Mississauga and the GTA. Drop off at Pak Halal Meat for next-day pickup, or book an on-site visit.",
+    "image": "images/logo-600.jpg",
+    "logo": "images/logo-600.jpg",
+    "telephone": "+1-289-952-9023",
+    "email": "ironedge905@gmail.com",
+    "priceRange": "$5-$30",
+    "currenciesAccepted": "CAD",
+    "paymentAccepted": "Cash, Interac e-Transfer",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1201 Britannia Rd W",
+      "addressLocality": "Mississauga",
+      "addressRegion": "ON",
+      "postalCode": "L5V 1N2",
+      "addressCountry": "CA"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "10:00",
+        "closes": "20:00"
+      }
+    ],
+    "areaServed": [
+      { "@type": "City", "name": "Mississauga" },
+      { "@type": "AdministrativeArea", "name": "Greater Toronto Area" }
+    ],
+    "makesOffer": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Knife sharpening" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Scissors sharpening" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Garden tool sharpening" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Knife repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "On-site sharpening" } }
+    ],
+    "sameAs": [
+      "https://www.instagram.com/ironedge905/",
+      "https://share.google/omGEiPni1tKLFHIff"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- ============================================================
+       HEADER: copied from index.html. The only change is which
+       link has aria-current="page" (now "Services & Pricing").
+       ============================================================ -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Iron <span>Edge</span></a>
+
+      <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav">
+        <span class="menu-icon" aria-hidden="true"></span>
+        Menu
+      </button>
+
+      <nav id="main-nav" class="main-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html" aria-current="page">Services &amp; Pricing</a></li>
+          <li><a href="how-it-works.html">How It Works</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="nav-cta">Contact &amp; Book</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- ============================================================
+         PAGE HEADING: a smaller version of the home page hero
+         ============================================================ -->
+    <section class="page-hero">
+      <div class="container">
+        <h1>Sharpening Services &amp; Prices</h1>
+        <p>Knife, scissors and garden tool sharpening in Mississauga and the GTA. Simple, upfront prices.</p>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         PRICE LIST
+         A table with just 2 columns (Item | Price) stays easy to
+         read on a narrow phone screen, with no sideways scrolling.
+         Prices confirmed by the owner. To change one, edit the $ amount below.
+         ============================================================ -->
+    <section class="section">
+      <div class="container narrow">
+
+        <table class="price-table">
+          <!-- "caption" is the table's title; screen readers announce it -->
+          <caption>Sharpening prices (per item)</caption>
+
+          <!-- "thead" = the heading row -->
+          <thead>
+            <tr>
+              <!-- scope="col" tells screen readers this heads a COLUMN -->
+              <th scope="col">Item</th>
+              <th scope="col">Price</th>
+            </tr>
+          </thead>
+
+          <!-- Each "tbody" is one group of rows, with its own heading row -->
+          <tbody>
+            <tr class="price-group">
+              <!-- colspan="2" makes this cell stretch across both columns -->
+              <th colspan="2" scope="colgroup">Knives</th>
+            </tr>
+            <tr>
+              <td>Kitchen knife, under 6"</td>
+              <td>$8</td>
+            </tr>
+            <tr>
+              <td>Kitchen knife, over 6"</td>
+              <td>$10</td>
+            </tr>
+            <tr>
+              <td>Serrated knife</td>
+              <td>$12</td>
+            </tr>
+          </tbody>
+
+          <tbody>
+            <tr class="price-group">
+              <th colspan="2" scope="colgroup">Scissors</th>
+            </tr>
+            <tr>
+              <td>Household scissors</td>
+              <td>$10</td>
+            </tr>
+            <tr>
+              <td>Fabric scissors</td>
+              <td>$15</td>
+            </tr>
+          </tbody>
+
+          <tbody>
+            <tr class="price-group">
+              <th colspan="2" scope="colgroup">Garden &amp; other</th>
+            </tr>
+            <tr>
+              <td>Garden tools <span class="price-note">(price depends on the tool)</span></td>
+              <td>$10 – $30</td>
+            </tr>
+            <tr>
+              <td>Repairs</td>
+              <td>from $5</td>
+            </tr>
+          </tbody>
+
+          <tbody>
+            <tr class="price-group">
+              <th colspan="2" scope="colgroup">Extras</th>
+            </tr>
+            <tr>
+              <td>Rush service</td>
+              <td>+$20</td>
+            </tr>
+          </tbody>
+        </table>
+
+
+        <!-- ============================================================
+             WHAT WE DON'T SHARPEN: a short note box
+             "aside" = content that's related but separate from the main text
+             ============================================================ -->
+        <aside class="note-box">
+          <h2>What we don't sharpen</h2>
+          <ul>
+            <li>Hair-cutting shears</li>
+            <li>Hair trimmer and clipper blades</li>
+            <li>Chainsaws</li>
+          </ul>
+        </aside>
+
+
+        <!-- ============================================================
+             ON-SITE VISITS BOX
+             "dl" = description list: pairs of a label (dt) and its value (dd)
+             All three details confirmed by the owner.
+             ============================================================ -->
+        <section class="onsite-box">
+          <h2>On-site visits</h2>
+          <p>We bring the sharpening to your restaurant, office or home, every <strong>Monday</strong>.</p>
+
+          <dl class="onsite-details">
+            <div>
+              <dt>Visit fee</dt>
+              <dd>From $10</dd>
+            </div>
+            <div>
+              <dt>Minimum order</dt>
+              <dd>5 items</dd>
+            </div>
+            <div>
+              <dt>Area covered</dt>
+              <dd>GTA</dd>
+            </div>
+          </dl>
+        </section>
+
+
+        <!-- ============================================================
+             BOOK NOW: the closing call to action
+             ============================================================ -->
+        <div class="page-cta">
+          <p>Ready to get your blades sharp again?</p>
+          <a href="contact.html" class="btn btn-large">Book Now</a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ============================================================
+       FOOTER: copied exactly from index.html
+       ============================================================ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+
+      <div>
+        <h2 class="footer-title">Contact</h2>
+        <p><a href="tel:+12899529023">(289) 952-9023</a></p>
+        <p><a href="mailto:ironedge905@gmail.com">ironedge905@gmail.com</a></p>
+      </div>
+
+      <div>
+        <h2 class="footer-title">Drop-off location</h2>
+        <address>
+          Pak Halal Meat<br>
+          1201 Britannia Rd West<br>
+          Mississauga, ON L5V 1N2
+        </address>
+      </div>
+
+      <div>
+        <h2 class="footer-title">Drop-off hours</h2>
+        <p>Tuesday – Sunday: 10 AM – 8 PM<br>Closed Mondays</p>
+      </div>
+
+      <div>
+        <h2 class="footer-title">Follow us</h2>
+        <ul class="social-links">
+          <li><a href="https://www.instagram.com/ironedge905/" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://share.google/omGEiPni1tKLFHIff" target="_blank" rel="noopener">Google Reviews</a></li>
+          <!-- Facebook page coming soon. When it's ready, put its link in place
+               of "your-page" and delete this comment's first and last lines:
+          <li><a href="https://www.facebook.com/your-page" target="_blank" rel="noopener">Facebook</a></li>
+          -->
+        </ul>
+      </div>
+
+    </div>
+
+    <p class="footer-bottom">&copy; <span id="year">2026</span> Iron Edge. Stay sharp.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

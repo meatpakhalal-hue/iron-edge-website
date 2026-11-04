@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<!-- Tells the browser this is a modern HTML page -->
+<html lang="en">
+<head>
+  <!-- "Head" = information ABOUT the page. Nothing here shows on screen. -->
+
+  <!-- Lets the page use all characters (accents, symbols, etc.) -->
+  <meta charset="UTF-8">
+
+  <!-- VERY important for phones: makes the page fit the phone's screen width
+       instead of showing a tiny zoomed-out desktop version -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- The text shown in the browser tab and in Google search results -->
+  <title>Knife &amp; Scissors Sharpening in Mississauga | Iron Edge</title>
+  <meta name="description" content="Professional knife and scissors sharpening in Mississauga. Drop off at Pak Halal Meat for next-day pickup, or book an on-site visit anywhere in the GTA.">
+
+  <!-- Loads the "Cinzel" heading font from Google Fonts (it matches the logo lettering) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- Our own shared stylesheet (all the colours, spacing and layout) -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- FAVICON: the little logo in the browser tab, bookmarks and phone home screens.
+       Made from the emblem part of images/logo.png. -->
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192.png">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+  <!-- Colours the phone browser's address bar charcoal, to match the header -->
+  <meta name="theme-color" content="#1c1c1e">
+
+  <!-- STRUCTURED DATA: business details written in a format Google reads
+       (called "JSON-LD"). It helps Google show your hours, phone and area in
+       local search and Maps. Visitors never see this.
+       The same block is on every page: if a detail changes, update all 5.
+       When the site has its own web address, add it as "url". -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Iron Edge",
+    "slogan": "Stay Sharp",
+    "description": "Knife and scissors sharpening in Mississauga and the GTA. Drop off at Pak Halal Meat for next-day pickup, or book an on-site visit.",
+    "image": "images/logo-600.jpg",
+    "logo": "images/logo-600.jpg",
+    "telephone": "+1-289-952-9023",
+    "email": "ironedge905@gmail.com",
+    "priceRange": "$5-$30",
+    "currenciesAccepted": "CAD",
+    "paymentAccepted": "Cash, Interac e-Transfer",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1201 Britannia Rd W",
+      "addressLocality": "Mississauga",
+      "addressRegion": "ON",
+      "postalCode": "L5V 1N2",
+      "addressCountry": "CA"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "10:00",
+        "closes": "20:00"
+      }
+    ],
+    "areaServed": [
+      { "@type": "City", "name": "Mississauga" },
+      { "@type": "AdministrativeArea", "name": "Greater Toronto Area" }
+    ],
+    "makesOffer": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Knife sharpening" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Scissors sharpening" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Garden tool sharpening" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Knife repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "On-site sharpening" } }
+    ],
+    "sameAs": [
+      "https://www.instagram.com/ironedge905/",
+      "https://share.google/omGEiPni1tKLFHIff"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- ============================================================
+       HEADER: logo text + navigation. Same on every page.
+       ============================================================ -->
+  <header class="site-header">
+    <div class="container header-inner">
+
+      <!-- Logo text. Clicking it always goes back to the home page. -->
+      <a href="index.html" class="logo">Iron <span>Edge</span></a>
+
+      <!-- Menu button: only visible on phones (CSS hides it on big screens).
+           aria-expanded tells screen readers whether the menu is open. -->
+      <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav">
+        <span class="menu-icon" aria-hidden="true"></span>
+        Menu
+      </button>
+
+      <!-- The navigation links to all 5 pages -->
+      <nav id="main-nav" class="main-nav" aria-label="Main">
+        <ul>
+          <!-- aria-current="page" marks which page we're on (styled in gold) -->
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="services.html">Services &amp; Pricing</a></li>
+          <li><a href="how-it-works.html">How It Works</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="nav-cta">Contact &amp; Book</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <!-- "main" holds the page's unique content -->
+  <main>
+
+    <!-- ============================================================
+         HERO: the big first thing visitors see
+         ============================================================ -->
+    <section class="hero">
+      <div class="container hero-inner">
+
+        <!-- The logo picture. "alt" text is read aloud to blind visitors
+             and shown if the image fails to load. -->
+        <img src="images/logo-600.jpg" alt="Iron Edge logo: a knife and scissors crossed, with the words Stay Sharp"
+             class="hero-logo" width="600" height="600">
+
+        <div class="hero-text">
+          <h1>Professional knife and scissors sharpening in Mississauga</h1>
+          <p class="hero-sub">Stay sharp. Drop off and collect the next day, or we'll come to you.</p>
+          <a href="contact.html" class="btn btn-large">Book Now</a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         HOW TO USE US: 3 cards
+         ============================================================ -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">How to use us</h2>
+
+        <!-- "cards" is a grid: 1 column on phones, 3 columns on desktop -->
+        <div class="cards">
+
+          <!-- Card 1 -->
+          <article class="card">
+            <!-- Icon strip at the top of the card (same SVG icons as How It Works).
+                 Want a real photo here later? Swap the whole "card-top" div for
+                 <img src="images/your-photo.jpg" alt="..." class="card-img"> -->
+            <div class="card-top">
+              <!-- ICON: a map pin -->
+              <svg class="card-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <div class="card-body">
+              <span class="card-step">1</span>
+              <h3>Drop off</h3>
+              <p>Bring your knives and scissors to our partner business, <strong>Pak Halal Meat</strong>.</p>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="card">
+            <div class="card-top">
+              <!-- ICON: circular arrows ("we take them and bring them back") -->
+              <svg class="card-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <polyline points="23 4 23 10 17 10"/>
+                <polyline points="1 20 1 14 7 14"/>
+                <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/>
+              </svg>
+            </div>
+            <div class="card-body">
+              <span class="card-step">2</span>
+              <h3>Collect the next day</h3>
+              <p>Your blades are sharpened and ready for you to pick up from Pak Halal Meat the next day.</p>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="card">
+            <div class="card-top">
+              <!-- ICON: a van -->
+              <svg class="card-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="1" y="3" width="15" height="13"/>
+                <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/>
+                <circle cx="5.5" cy="18.5" r="2.5"/>
+                <circle cx="18.5" cy="18.5" r="2.5"/>
+              </svg>
+            </div>
+            <div class="card-body">
+              <span class="card-step card-step-alt">Or</span>
+              <h3>We come to you</h3>
+              <p>On-site sharpening for homes and businesses across the GTA, every Monday.</p>
+              <a href="contact.html" class="text-link">Book a visit &rarr;</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         REVIEWS: real reviews copied word for word from Google.
+         To add another: copy one whole <figure>...</figure> block,
+         paste it below the last one, and change the text and name.
+         ============================================================ -->
+    <section class="section section-dark">
+      <div class="container">
+        <h2 class="section-title">What customers say</h2>
+
+        <div class="reviews">
+
+          <!-- "blockquote" is the HTML tag for a quote -->
+          <figure class="review">
+            <!-- The stars. aria-label gives screen readers a readable version. -->
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>"He sharpens our butchers knives every two weeks and sometimes weekly depending on our workload and he always puts a razor edge on each of our knives, including repair of any tip or edge damage. We are extremely happy with his service and would highly recommend him for all of your sharpening needs. I am including a before and after of on of the chef knives he fixed for us."</blockquote>
+            <figcaption>— Moughees R., Google review</figcaption>
+          </figure>
+
+          <figure class="review">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>"Thank you so much for sharpening my fabric scissors. They are better than new!"</blockquote>
+            <figcaption>— Hira Z., Google review</figcaption>
+          </figure>
+
+        </div>
+
+        <!-- ============================================================
+             BEFORE & AFTER: the photos from Moughees R.'s review.
+             loading="lazy" = the photos only load when scrolled near.
+             The "Before" / "After" labels sit on top of each photo (see CSS).
+             ============================================================ -->
+        <figure class="before-after">
+          <div class="ba-pair">
+            <div class="ba-item">
+              <img src="images/before.jpg" alt="Chef knife before repair, with chips along the edge near the handle" width="513" height="911" loading="lazy">
+              <span class="ba-label">Before</span>
+            </div>
+            <div class="ba-item">
+              <img src="images/after.jpg" alt="The same chef knife after repair, with a clean, straight edge" width="513" height="911" loading="lazy">
+              <span class="ba-label ba-label-after">After</span>
+            </div>
+          </div>
+          <figcaption>A chipped chef knife we repaired for Moughees R.</figcaption>
+        </figure>
+
+        <!-- Link to the Google Business Profile, where all reviews live.
+             target="_blank" opens it in a new tab so visitors don't lose our site. -->
+        <div class="reviews-more">
+          <a href="https://share.google/omGEiPni1tKLFHIff" class="btn btn-outline" target="_blank" rel="noopener">Read all our reviews on Google</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ============================================================
+       FOOTER: contact details, drop-off info, social links.
+       Same on every page.
+       ============================================================ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+
+      <!-- Column 1: contact -->
+      <div>
+        <h2 class="footer-title">Contact</h2>
+        <!-- "tel:" links open the phone dialer when tapped on a phone.
+             Phone number: change both the href and the text if it ever changes. -->
+        <p><a href="tel:+12899529023">(289) 952-9023</a></p>
+        <!-- "mailto:" links open the visitor's email app. -->
+        <p><a href="mailto:ironedge905@gmail.com">ironedge905@gmail.com</a></p>
+      </div>
+
+      <!-- Column 2: drop-off location. "address" is the HTML tag for contact addresses. -->
+      <div>
+        <h2 class="footer-title">Drop-off location</h2>
+        <address>
+          Pak Halal Meat<br>
+          1201 Britannia Rd West<br>
+          Mississauga, ON L5V 1N2
+        </address>
+      </div>
+
+      <!-- Column 3: hours. PLACEHOLDER times: replace with real hours. -->
+      <div>
+        <h2 class="footer-title">Drop-off hours</h2>
+        <p>Tuesday – Sunday: 10 AM – 8 PM<br>Closed Mondays</p>
+      </div>
+
+      <div>
+        <h2 class="footer-title">Follow us</h2>
+        <ul class="social-links">
+          <li><a href="https://www.instagram.com/ironedge905/" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://share.google/omGEiPni1tKLFHIff" target="_blank" rel="noopener">Google Reviews</a></li>
+          <!-- Facebook page coming soon. When it's ready, put its link in place
+               of "your-page" and delete this comment's first and last lines:
+          <li><a href="https://www.facebook.com/your-page" target="_blank" rel="noopener">Facebook</a></li>
+          -->
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Bottom line. The year is filled in automatically by main.js -->
+    <p class="footer-bottom">&copy; <span id="year">2026</span> Iron Edge. Stay sharp.</p>
+  </footer>
+
+
+  <!-- Our JavaScript. Loaded at the END of the page so the HTML
+       above is already there when the script runs. -->
+  <script src="js/main.js"></script>
+</body>
+</html>

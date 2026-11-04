@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Same set-up as the home page. See index.html for what each line does. -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Knife &amp; Scissors Sharpening in Mississauga | Iron Edge</title>
+  <meta name="description" content="Book an on-site knife and scissors sharpening visit in the GTA, or drop off at Pak Halal Meat, 1201 Britannia Rd W, Mississauga. Call (289) 952-9023.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- FAVICON: the little logo in the browser tab, bookmarks and phone home screens.
+       Made from the emblem part of images/logo.png. -->
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192.png">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+  <!-- Colours the phone browser's address bar charcoal, to match the header -->
+  <meta name="theme-color" content="#1c1c1e">
+
+  <!-- STRUCTURED DATA: business details written in a format Google reads
+       (called "JSON-LD"). It helps Google show your hours, phone and area in
+       local search and Maps. Visitors never see this.
+       The same block is on every page: if a detail changes, update all 5.
+       When the site has its own web address, add it as "url". -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Iron Edge",
+    "slogan": "Stay Sharp",
+    "description": "Knife and scissors sharpening in Mississauga and the GTA. Drop off at Pak Halal Meat for next-day pickup, or book an on-site visit.",
+    "image": "images/logo-600.jpg",
+    "logo": "images/logo-600.jpg",
+    "telephone": "+1-289-952-9023",
+    "email": "ironedge905@gmail.com",
+    "priceRange": "$5-$30",
+    "currenciesAccepted": "CAD",
+    "paymentAccepted": "Cash, Interac e-Transfer",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1201 Britannia Rd W",
+      "addressLocality": "Mississauga",
+      "addressRegion": "ON",
+      "postalCode": "L5V 1N2",
+      "addressCountry": "CA"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "10:00",
+        "closes": "20:00"
+      }
+    ],
+    "areaServed": [
+      { "@type": "City", "name": "Mississauga" },
+      { "@type": "AdministrativeArea", "name": "Greater Toronto Area" }
+    ],
+    "makesOffer": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Knife sharpening" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Scissors sharpening" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Garden tool sharpening" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Knife repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "On-site sharpening" } }
+    ],
+    "sameAs": [
+      "https://www.instagram.com/ironedge905/",
+      "https://share.google/omGEiPni1tKLFHIff"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- ============================================================
+       HEADER: copied from index.html ("Book Now" is now current)
+       ============================================================ -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Iron <span>Edge</span></a>
+
+      <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav">
+        <span class="menu-icon" aria-hidden="true"></span>
+        Menu
+      </button>
+
+      <nav id="main-nav" class="main-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services &amp; Pricing</a></li>
+          <li><a href="how-it-works.html">How It Works</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="nav-cta" aria-current="page">Contact &amp; Book</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <main>
+
+    <section class="page-hero">
+      <div class="container">
+        <h1>Contact &amp; Booking</h1>
+        <p>Request an on-site visit, or drop off at Pak Halal Meat. No booking needed for drop-offs.</p>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         QUICK CONTACT: big tap-to-call and email buttons
+         If the phone or email changes, update it here AND in every footer.
+         ============================================================ -->
+    <section class="quick-contact">
+      <div class="container quick-contact-inner">
+        <a href="tel:+12899529023" class="btn">Call (289) 952-9023</a>
+        <a href="mailto:ironedge905@gmail.com" class="btn btn-outline">Email us</a>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         BOOKING FORM: request an on-site visit
+         ------------------------------------------------------------
+         HOW IT WORKS:
+         When someone presses "Send request", the browser sends the
+         answers to Formspree (a free online service). Formspree then
+         emails them to you. No server of your own is needed.
+
+         "action" = where the answers are sent.
+         The ID at the end (xvkkdpdw) is your Formspree form ID.
+
+         "name" on each field = the label you'll see in the email.
+         "required" = the browser won't send the form if it's empty.
+         ============================================================ -->
+    <section class="section" id="book">
+      <div class="container narrow">
+        <h2 class="section-title">Request an on-site visit</h2>
+
+        <form class="booking-form" action="https://formspree.io/f/xvkkdpdw" method="POST">
+
+          <!-- Hidden: sets the subject line of the email you receive -->
+          <input type="hidden" name="_subject" value="New on-site visit request: Iron Edge website">
+
+          <!-- Hidden spam trap: real people never see or fill this in,
+               but spam robots do. Formspree ignores anything that fills it. -->
+          <input type="text" name="_gotcha" class="visually-hidden" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+
+          <!-- ---------- About you ---------- -->
+          <!-- "fieldset" groups related fields; "legend" is the group's title -->
+          <fieldset>
+            <legend>Your details</legend>
+
+            <!-- "for" on the label matches the "id" on the input, so tapping
+                 the label puts the cursor in the box (great on phones) -->
+            <div class="field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="Name" autocomplete="name" required>
+            </div>
+
+            <!-- type="tel" shows the number keypad on phones -->
+            <div class="field">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="Phone" autocomplete="tel" required>
+            </div>
+
+            <!-- type="email" shows the @ keyboard and checks it looks like an email.
+                 name="email" (lowercase) lets you press "Reply" in your email app
+                 to answer the customer directly. -->
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" autocomplete="email" required>
+            </div>
+
+            <div class="field">
+              <label for="address">Address for the visit</label>
+              <input type="text" id="address" name="Address" autocomplete="street-address" placeholder="Street, city" required>
+            </div>
+          </fieldset>
+
+
+          <!-- ---------- Business or home ---------- -->
+          <!-- "radio" buttons: only ONE can be chosen, because they share the same name -->
+          <fieldset>
+            <legend>Is this for a business or a home?</legend>
+            <div class="choice-row">
+              <label class="choice">
+                <input type="radio" name="Location type" value="Business" required>
+                Business
+              </label>
+              <label class="choice">
+                <input type="radio" name="Location type" value="Home">
+                Home
+              </label>
+            </div>
+          </fieldset>
+
+
+          <!-- ---------- What needs sharpening ---------- -->
+          <!-- "checkbox": they can tick as MANY as they like -->
+          <fieldset>
+            <legend>What needs sharpening?</legend>
+            <div class="choice-grid">
+              <label class="choice">
+                <input type="checkbox" name="Items" value="Knives">
+                Knives
+              </label>
+              <label class="choice">
+                <input type="checkbox" name="Items" value="Scissors">
+                Scissors
+              </label>
+              <label class="choice">
+                <input type="checkbox" name="Items" value="Shears">
+                Shears <span class="choice-note">(kitchen, poultry or garden, not hair)</span>
+              </label>
+              <label class="choice">
+                <input type="checkbox" name="Items" value="Garden tools">
+                Garden tools
+              </label>
+            </div>
+          </fieldset>
+
+
+          <!-- ---------- Visit details ---------- -->
+          <fieldset>
+            <legend>Visit details</legend>
+
+            <!-- "select" = a drop-down menu -->
+            <div class="field">
+              <label for="count">Roughly how many items?</label>
+              <select id="count" name="Number of items" required>
+                <option value="">Choose…</option>
+                <option>1–5</option>
+                <option>6–10</option>
+                <option>11–20</option>
+                <option>More than 20</option>
+              </select>
+            </div>
+
+            <!-- On-site visits are on MONDAYS ONLY.
+                 This drop-down starts almost empty: main.js fills it in with
+                 the next 8 Mondays each time the page loads, so the dates
+                 are always up to date and nobody can pick another day. -->
+            <div class="field">
+              <label for="date">Preferred Monday <span class="optional">(visits are Mondays only)</span></label>
+              <select id="date" name="Preferred date" required>
+                <option value="">Choose a Monday…</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="time">Preferred time</label>
+              <select id="time" name="Preferred time" required>
+                <option value="">Choose…</option>
+                <option>Morning (10 AM – 12 PM)</option>
+                <option>Afternoon (12 PM – 4 PM)</option>
+                <option>Evening (4 PM – 8 PM)</option>
+                <option>Any time</option>
+              </select>
+            </div>
+
+            <!-- "textarea" = a bigger box for longer messages -->
+            <div class="field">
+              <label for="notes">Notes <span class="optional">(optional)</span></label>
+              <textarea id="notes" name="Notes" rows="4" placeholder="E.g. parking, which entrance to use, any damaged blades"></textarea>
+            </div>
+          </fieldset>
+
+          <button type="submit" class="btn btn-large">Send request</button>
+
+          <!-- main.js shows a "thank you" or error message here after sending.
+               role="status" makes screen readers read it out automatically. -->
+          <p class="form-status" role="status"></p>
+
+          <p class="form-small">On-site visits are on Mondays only. We'll get back to you to confirm the visit and the visit fee (from $10, based on distance).</p>
+        </form>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         DROP-OFF LOCATION + MAP
+         ============================================================ -->
+    <section class="section section-dark">
+      <div class="container narrow">
+        <h2 class="section-title">Drop-off location</h2>
+
+        <div class="dropoff-info">
+          <div>
+            <h3>Pak Halal Meat</h3>
+            <address>
+              1201 Britannia Rd West<br>
+              Mississauga, ON L5V 1N2
+            </address>
+          </div>
+          <div>
+            <h3>Drop-off hours</h3>
+            <p>Tuesday – Sunday: 10 AM – 8 PM<br>Closed Mondays</p>
+          </div>
+        </div>
+
+        <!-- Same map as the How It Works page -->
+        <div class="map-wrap">
+          <iframe
+            src="https://www.google.com/maps?q=Pak+Halal+Meat,+1201+Britannia+Rd+W,+Mississauga,+ON+L5V+1N2&output=embed"
+            title="Map showing Pak Halal Meat, 1201 Britannia Rd West, Mississauga"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <p class="map-link">
+          <a href="https://www.google.com/maps/search/?api=1&query=Pak+Halal+Meat+1201+Britannia+Rd+W+Mississauga+ON+L5V+1N2" target="_blank" rel="noopener">Open in Google Maps for directions &rarr;</a>
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ============================================================
+       FOOTER: copied from index.html
+       ============================================================ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+
+      <div>
+        <h2 class="footer-title">Contact</h2>
+        <p><a href="tel:+12899529023">(289) 952-9023</a></p>
+        <p><a href="mailto:ironedge905@gmail.com">ironedge905@gmail.com</a></p>
+      </div>
+
+      <div>
+        <h2 class="footer-title">Drop-off location</h2>
+        <address>
+          Pak Halal Meat<br>
+          1201 Britannia Rd West<br>
+          Mississauga, ON L5V 1N2
+        </address>
+      </div>
+
+      <div>
+        <h2 class="footer-title">Drop-off hours</h2>
+        <p>Tuesday – Sunday: 10 AM – 8 PM<br>Closed Mondays</p>
+      </div>
+
+      <div>
+        <h2 class="footer-title">Follow us</h2>
+        <ul class="social-links">
+          <li><a href="https://www.instagram.com/ironedge905/" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://share.google/omGEiPni1tKLFHIff" target="_blank" rel="noopener">Google Reviews</a></li>
+          <!-- Facebook page coming soon. When it's ready, put its link in place
+               of "your-page" and delete this comment's first and last lines:
+          <li><a href="https://www.facebook.com/your-page" target="_blank" rel="noopener">Facebook</a></li>
+          -->
+        </ul>
+      </div>
+
+    </div>
+
+    <p class="footer-bottom">&copy; <span id="year">2026</span> Iron Edge. Stay sharp.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

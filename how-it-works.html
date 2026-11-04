@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Same set-up as the home page. See index.html for what each line does. -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drop-Off &amp; On-Site Knife Sharpening, Mississauga | Iron Edge</title>
+  <meta name="description" content="Drop off knives and scissors at Pak Halal Meat in Mississauga and pick up the next day, or book an on-site sharpening visit anywhere in the GTA.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- FAVICON: the little logo in the browser tab, bookmarks and phone home screens.
+       Made from the emblem part of images/logo.png. -->
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192.png">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+  <!-- Colours the phone browser's address bar charcoal, to match the header -->
+  <meta name="theme-color" content="#1c1c1e">
+
+  <!-- STRUCTURED DATA: business details written in a format Google reads
+       (called "JSON-LD"). It helps Google show your hours, phone and area in
+       local search and Maps. Visitors never see this.
+       The same block is on every page: if a detail changes, update all 5.
+       When the site has its own web address, add it as "url". -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Iron Edge",
+    "slogan": "Stay Sharp",
+    "description": "Knife and scissors sharpening in Mississauga and the GTA. Drop off at Pak Halal Meat for next-day pickup, or book an on-site visit.",
+    "image": "images/logo-600.jpg",
+    "logo": "images/logo-600.jpg",
+    "telephone": "+1-289-952-9023",
+    "email": "ironedge905@gmail.com",
+    "priceRange": "$5-$30",
+    "currenciesAccepted": "CAD",
+    "paymentAccepted": "Cash, Interac e-Transfer",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1201 Britannia Rd W",
+      "addressLocality": "Mississauga",
+      "addressRegion": "ON",
+      "postalCode": "L5V 1N2",
+      "addressCountry": "CA"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "10:00",
+        "closes": "20:00"
+      }
+    ],
+    "areaServed": [
+      { "@type": "City", "name": "Mississauga" },
+      { "@type": "AdministrativeArea", "name": "Greater Toronto Area" }
+    ],
+    "makesOffer": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Knife sharpening" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Scissors sharpening" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Garden tool sharpening" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Knife repair" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "On-site sharpening" } }
+    ],
+    "sameAs": [
+      "https://www.instagram.com/ironedge905/",
+      "https://share.google/omGEiPni1tKLFHIff"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- ============================================================
+       HEADER: copied from index.html ("How It Works" is now current)
+       ============================================================ -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Iron <span>Edge</span></a>
+
+      <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav">
+        <span class="menu-icon" aria-hidden="true"></span>
+        Menu
+      </button>
+
+      <nav id="main-nav" class="main-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services &amp; Pricing</a></li>
+          <li><a href="how-it-works.html" aria-current="page">How It Works</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="nav-cta">Contact &amp; Book</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <main>
+
+    <section class="page-hero">
+      <div class="container">
+        <h1>How It Works</h1>
+        <p>Two easy ways to get your knives and scissors sharpened in Mississauga and the GTA.</p>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         SECTION 1: DROP-OFF (next-day pickup)
+         ============================================================ -->
+    <section class="section">
+      <div class="container narrow">
+        <h2 class="section-title">Drop-off <span class="title-note">(next-day pickup)</span></h2>
+
+        <!-- "ol" = ordered list. The browser knows these are steps in order.
+             The CSS hides the normal numbers and draws gold circles instead. -->
+        <ol class="steps">
+
+          <li class="step">
+            <!-- ICON: a map pin. These icons are drawn with SVG, a way of
+                 drawing shapes with code. aria-hidden="true" means screen
+                 readers skip them (they're only decoration). -->
+            <svg class="step-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+            <div>
+              <h3>Bring your knives to Pak Halal Meat</h3>
+              <p>
+                1201 Britannia Rd West, Mississauga, ON L5V 1N2<br>
+                Drop-offs <strong>Tuesday – Sunday, 10 AM – 8 PM</strong> (closed Mondays)
+              </p>
+            </div>
+          </li>
+
+          <li class="step">
+            <!-- ICON: a label tag -->
+            <svg class="step-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/>
+              <line x1="7" y1="7" x2="7.01" y2="7"/>
+            </svg>
+            <div>
+              <h3>Wrap and label them</h3>
+              <p>Make them safe to carry: wrap them in cloth, tape cardboard over the blade, or use a secure box. Label them with your <strong>name and phone number</strong>, or we'll label them for you when you drop them off.</p>
+            </div>
+          </li>
+
+          <li class="step">
+            <!-- ICON: circular arrows ("we take them and bring them back") -->
+            <svg class="step-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <polyline points="23 4 23 10 17 10"/>
+              <polyline points="1 20 1 14 7 14"/>
+              <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/>
+            </svg>
+            <div>
+              <h3>We sharpen them overnight</h3>
+              <p>We collect, sharpen, and return them to Pak Halal Meat the <strong>next day</strong>. Sunday drop-offs are ready on Monday.</p>
+            </div>
+          </li>
+
+          <li class="step">
+            <!-- ICON: a payment card -->
+            <svg class="step-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="1" y="4" width="22" height="16" rx="2" ry="2"/>
+              <line x1="1" y1="10" x2="23" y2="10"/>
+            </svg>
+            <div>
+              <h3>Pick up and pay</h3>
+              <p>Collect your blades and pay by <strong>cash or e-transfer</strong>.</p>
+            </div>
+          </li>
+
+        </ol>
+
+        <!-- ============================================================
+             GOOGLE MAP
+             An "iframe" shows another website inside our page.
+             This one shows Google Maps for the partner's address.
+             No account or key is needed for this simple kind of map.
+             loading="lazy" = the map only loads when scrolled near (faster page).
+             ============================================================ -->
+        <div class="map-wrap">
+          <iframe
+            src="https://www.google.com/maps?q=Pak+Halal+Meat,+1201+Britannia+Rd+W,+Mississauga,+ON+L5V+1N2&output=embed"
+            title="Map showing Pak Halal Meat, 1201 Britannia Rd West, Mississauga"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <p class="map-link">
+          <a href="https://www.google.com/maps/search/?api=1&query=Pak+Halal+Meat+1201+Britannia+Rd+W+Mississauga+ON+L5V+1N2" target="_blank" rel="noopener">Open in Google Maps for directions &rarr;</a>
+        </p>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         SECTION 2: WE COME TO YOU (on-site)
+         Uses the dark background so it looks clearly separate.
+         ============================================================ -->
+    <section class="section section-dark">
+      <div class="container narrow">
+        <h2 class="section-title">We come to you <span class="title-note">(on-site)</span></h2>
+
+        <ol class="steps">
+
+          <li class="step">
+            <!-- ICON: a group of people -->
+            <svg class="step-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+            <div>
+              <h3>Who it's for</h3>
+              <p>Restaurants, offices and larger home orders.</p>
+            </div>
+          </li>
+
+          <li class="step">
+            <!-- ICON: a van -->
+            <svg class="step-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="1" y="3" width="15" height="13"/>
+              <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/>
+              <circle cx="5.5" cy="18.5" r="2.5"/>
+              <circle cx="18.5" cy="18.5" r="2.5"/>
+            </svg>
+            <div>
+              <h3>Area and price</h3>
+              <p>We cover the <strong>GTA</strong>. The visit fee <strong>starts from $10</strong>, based on distance, plus the normal price per item.</p>
+            </div>
+          </li>
+
+          <li class="step">
+            <!-- ICON: a calendar -->
+            <svg class="step-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+              <line x1="16" y1="2" x2="16" y2="6"/>
+              <line x1="8" y1="2" x2="8" y2="6"/>
+              <line x1="3" y1="10" x2="21" y2="10"/>
+            </svg>
+            <div>
+              <h3>Request a visit</h3>
+              <p>Visits are on <strong>Mondays</strong>. Tell us what you need sharpened and which Monday suits you.</p>
+              <a href="contact.html" class="btn">Request a visit</a>
+            </div>
+          </li>
+
+        </ol>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         FAQ
+         "details" + "summary" make a question that opens and closes
+         when tapped, built into HTML, so no JavaScript is needed!
+         ============================================================ -->
+    <section class="section">
+      <div class="container narrow">
+        <h2 class="section-title">Frequently asked questions</h2>
+
+        <div class="faq">
+
+          <details>
+            <summary>What if I can't pick up the next day?</summary>
+            <p>No problem. We'll hold your items at Pak Halal Meat for 2 weeks. If they haven't been collected by then, we'll get in touch with you.</p>
+          </details>
+
+          <details>
+            <summary>Do you sharpen hair-cutting shears?</summary>
+            <p>Not at the moment, but we may offer it in the future. We also don't sharpen hair trimmer or clipper blades, or chainsaws.</p>
+          </details>
+
+          <details>
+            <summary>How much does it cost?</summary>
+            <p>Prices start from $8 per knife. See our <a href="services.html">Services &amp; Pricing</a> page for the full list.</p>
+          </details>
+
+          <details>
+            <summary>Do I need to book before dropping off?</summary>
+            <p>No. Just bring your items to Pak Halal Meat Tuesday to Sunday, between 10 AM and 8 PM. You only need to book for on-site visits.</p>
+          </details>
+
+          <details>
+            <summary>I dropped off on a Sunday. When can I pick up?</summary>
+            <p>Monday, as normal. Sunday drop-offs are still ready the next day. We don't take drop-offs on Mondays, but you can pick up as usual.</p>
+          </details>
+
+          <details>
+            <summary>How should I wrap my knives?</summary>
+            <p>Just make them safe enough to bring to us. You could wrap them in cloth, tape cardboard over the blade, or put them in a secure box. Label them with your name and phone number, or we'll do it for you when you bring them in.</p>
+          </details>
+
+          <details>
+            <summary>How do I pay?</summary>
+            <p>Pay by cash or e-transfer when you pick up your items.</p>
+          </details>
+
+          <details>
+            <summary>Can you fix chipped or broken knives?</summary>
+            <p>Yes. Repairs start from $5, depending on the damage.</p>
+          </details>
+
+          <details>
+            <summary>Which areas do you visit for on-site sharpening?</summary>
+            <p>We cover the GTA, on Mondays. The visit fee starts from $10, depending on how far we travel. <a href="contact.html">Request a visit</a>.</p>
+          </details>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ============================================================
+       FOOTER: copied from index.html
+       ============================================================ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+
+      <div>
+        <h2 class="footer-title">Contact</h2>
+        <p><a href="tel:+12899529023">(289) 952-9023</a></p>
+        <p><a href="mailto:ironedge905@gmail.com">ironedge905@gmail.com</a></p>
+      </div>
+
+      <div>
+        <h2 class="footer-title">Drop-off location</h2>
+        <address>
+          Pak Halal Meat<br>
+          1201 Britannia Rd West<br>
+          Mississauga, ON L5V 1N2
+        </address>
+      </div>
+
+      <div>
+        <h2 class="footer-title">Drop-off hours</h2>
+        <p>Tuesday – Sunday: 10 AM – 8 PM<br>Closed Mondays</p>
+      </div>
+
+      <div>
+        <h2 class="footer-title">Follow us</h2>
+        <ul class="social-links">
+          <li><a href="https://www.instagram.com/ironedge905/" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://share.google/omGEiPni1tKLFHIff" target="_blank" rel="noopener">Google Reviews</a></li>
+          <!-- Facebook page coming soon. When it's ready, put its link in place
+               of "your-page" and delete this comment's first and last lines:
+          <li><a href="https://www.facebook.com/your-page" target="_blank" rel="noopener">Facebook</a></li>
+          -->
+        </ul>
+      </div>
+
+    </div>
+
+    <p class="footer-bottom">&copy; <span id="year">2026</span> Iron Edge. Stay sharp.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
