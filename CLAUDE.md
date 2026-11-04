@@ -119,3 +119,5 @@ Iron Edge Website/
   **every `git push` to `main` updates the live site automatically.** No build command; publish directory is the repo root.
 - Netlify's "Visitor access" must stay public (no Netlify-login protection), or customers see a sign-in page.
 - `sitemap.xml` lists every page (update it when a page is added) and `robots.txt` points to it.
+- **Google Search Console** (URL-prefix property `https://ironedge905.ca/`) is verified by the
+  `google-site-verification` meta tag in `index.html`'s `<head>`. Never remove it.
