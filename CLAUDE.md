@@ -102,8 +102,9 @@ Iron Edge Website/
 ## SEO rules
 - Every page has: a `<title>` of 60 characters or less ("Keyword phrase, Mississauga | Iron Edge"),
   a meta description of about 140–155 characters mentioning Mississauga and/or the GTA, and exactly one `<h1>`.
-- Every page's `<head>` has the same favicon links (`images/favicon-32.png`, `favicon-192.png`,
-  `apple-touch-icon.png`, made from the logo emblem), a `theme-color`, and the same
+- Every page's `<head>` has the same favicon links (`favicon.ico` at the root, `images/favicon-48.png`,
+  `favicon-32.png`, `favicon-192.png`, `apple-touch-icon.png`, all made from the logo emblem;
+  Google Search prefers sizes that are multiples of 48px), a `theme-color`, and the same
   **LocalBusiness JSON-LD** block. If a business detail changes (hours, phone, address, links),
   update it in the visible page text AND in the JSON-LD on all 5 pages.
 - The JSON-LD `url`, `image` and `logo` use `https://ironedge905.ca/`. If the domain ever changes,
@@ -121,3 +122,7 @@ Iron Edge Website/
 - `sitemap.xml` lists every page (update it when a page is added) and `robots.txt` points to it.
 - **Google Search Console** (URL-prefix property `https://ironedge905.ca/`) is verified by the
   `google-site-verification` meta tag in `index.html`'s `<head>`. Never remove it.
+- Netlify's free plan injects a **"Powered by Netlify" badge** on every page. It's part of the free plan's
+  terms, so **don't hide it with CSS/JS**. Owner chose (2026-11-04) to keep it. If they want it gone later:
+  a paid Netlify plan, or move hosting to Cloudflare Pages (free, commercial OK, same GitHub repo).
+- Netlify serves "pretty URLs" (`/services` instead of `services.html`); both work, no change needed.
