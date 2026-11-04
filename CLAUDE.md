@@ -106,5 +106,12 @@ Iron Edge Website/
   `apple-touch-icon.png`, made from the logo emblem), a `theme-color`, and the same
   **LocalBusiness JSON-LD** block. If a business detail changes (hours, phone, address, links),
   update it in the visible page text AND in the JSON-LD on all 5 pages.
-- When the site gets its own domain: add `"url"` to the JSON-LD, make `image`/`logo` full URLs,
-  and consider canonical + Open Graph tags.
+- The JSON-LD `url`, `image` and `logo` use the live address. If the site gets its own domain,
+  update them on all 5 pages, and consider canonical + Open Graph tags.
+
+## Hosting
+- Hosted free on **Netlify** (chosen over Vercel because Vercel's free Hobby plan is non-commercial only).
+- Live address: **https://iron-edge905.netlify.app/**
+- Netlify is connected to the GitHub repo `meatpakhalal-hue/iron-edge-website` (branch `main`):
+  **every `git push` to `main` updates the live site automatically.** No build command; publish directory is the repo root.
+- Netlify's "Visitor access" must stay public (no Netlify-login protection), or customers see a sign-in page.
