@@ -118,3 +118,4 @@ Iron Edge Website/
 - Netlify is connected to the GitHub repo `meatpakhalal-hue/iron-edge-website` (branch `main`):
   **every `git push` to `main` updates the live site automatically.** No build command; publish directory is the repo root.
 - Netlify's "Visitor access" must stay public (no Netlify-login protection), or customers see a sign-in page.
+- `sitemap.xml` lists every page (update it when a page is added) and `robots.txt` points to it.

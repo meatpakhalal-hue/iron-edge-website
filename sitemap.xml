@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SITEMAP: a list of every page on the site, for Google and other search engines.
+     When you add a new page, add a <url> block for it here too. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://ironedge905.ca/</loc><lastmod>2026-11-04</lastmod></url>
+  <url><loc>https://ironedge905.ca/services.html</loc><lastmod>2026-11-04</lastmod></url>
+  <url><loc>https://ironedge905.ca/how-it-works.html</loc><lastmod>2026-11-04</lastmod></url>
+  <url><loc>https://ironedge905.ca/about.html</loc><lastmod>2026-11-04</lastmod></url>
+  <url><loc>https://ironedge905.ca/contact.html</loc><lastmod>2026-11-04</lastmod></url>
+</urlset>
