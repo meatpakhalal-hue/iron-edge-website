@@ -1,0 +1,5 @@
+# NETLIFY REDIRECTS: Netlify reads this file (it is not a web page).
+# Sends anyone visiting the old Netlify address to the same page on the real domain.
+# 301 = "moved permanently" (tells Google to use ironedge905.ca instead).
+# The ! makes it apply even though the page exists at the old address.
+https://iron-edge905.netlify.app/*  https://ironedge905.ca/:splat  301!
